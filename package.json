@@ -1,0 +1,45 @@
+{
+  "name": "gmoviesbot",
+  "version": "1.0.0",
+  "description": "Bot twitter pour rechercher n'importe quel film contenu dans la base de données TMDB",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "prettier-format": "prettier --config .prettierrc src/**/*.ts --write",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BorisGautier/gmoviesbot.git"
+  },
+  "keywords": [
+    "Twitter",
+    "Movies",
+    "TMDB",
+    "Api",
+    "Docker"
+  ],
+  "author": "Boris Gautier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BorisGautier/gmoviesbot/issues"
+  },
+  "homepage": "https://github.com/BorisGautier/gmoviesbot#readme",
+  "devDependencies": {
+    "@types/request": "^2.48.8",
+    "@types/twit": "^2.2.31",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "request": "^2.88.2",
+    "twit": "^2.2.11"
+  }
+}
